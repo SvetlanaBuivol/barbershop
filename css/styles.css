@@ -1,0 +1,38 @@
+:root {
+    /* Font */
+    --main-font: 'Open Sans';
+    --secondary-font: 'Railway';
+
+    /* Text color */
+    --maim-txt-cl: #303030;
+    --accent-txt-cl: #FF6C00;
+    --light-txt-cl: #FFFFFF;
+    --grey-txt-cl: #9DA4BD;
+    --grey-12-txt-cl: rgba(157, 164, 189, 0.12);
+    --grey-40-txt-cl: rgba(157, 164, 189, 0.4);    
+    --grey-60-txt-cl: rgba(157, 164, 189, 0.6);
+
+    /* Background color */
+
+    /* Other */
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--maim-txt-cl);
+}
+
+ul {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.btn {
+    font-family: inherit;
+    color: currentColor;
+    cursor: pointer;
+}
