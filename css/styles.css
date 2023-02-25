@@ -15,6 +15,7 @@
   --background-cl: #111319;
   --hero-backgrnd-cl: rgba(25, 28, 38, 0.2);
   --team-bckgrnd-cl: #f7f7f7;
+  --contact-bckgrnd-cl: #191c26;
 
   /* Background color */
 
@@ -29,6 +30,10 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.6;
+}
+
+address {
+  font-style: inherit;
 }
 
 ul {
@@ -684,13 +689,109 @@ p {
   .portfolio-uppertitle {
     margin-bottom: 44px;
   }
-  .portfolio-img {
-    /* width: 450px; */
+}
+
+/* =================== */
+/* |     CONTACT     | */
+/* =================== */
+
+.contact-section {
+  background-color: var(--contact-bckgrnd-cl);
+  background-image: url(../images/contacts/img-mob.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 480px;
+  height: 496px;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .contact-section {
+    background-image: url(../images/contacts/img-mob@2x.png);
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .portfolio-img {
-    /* width: 270px; */
+.contact-title {
+  display: block;
+  text-align: center;
+  margin-bottom: 40px;
+
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+  color: var(--light-txt-cl);
+}
+
+.contact-icon {
+  margin-right: 16px;
+  stroke: var(--grey-txt-cl);
+  fill: transparent;
+}
+
+.adress-list {
+  margin: 0 0 44px 0;
+  padding: 0;
+  list-style: none;
+
+  color: var(--grey-txt-cl);
+}
+
+.adress-item {
+  display: flex;
+  align-items: center;
+}
+
+.adress-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.adress-item:last-child {
+  text-decoration: underline;
+}
+
+.map-link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+}
+
+.uppertitle {
+  color: var(--light-txt-cl);
+}
+
+.contact-text {
+  color: var(--grey-txt-cl);
+}
+
+@media screen and (min-width: 768px) {
+  .contact-section {
+    background-image: url(../images/contacts/img-tab.png);
+    max-width: 768px;
+    height: 449px;
   }
+  .contact-title {
+    text-align: start;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+    .contact-wrapper {
+        display: flex;
+        gap: 30px;
+    }
+    .adress-list {
+        width: 330px;
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .contact-section {
+        background-image: url(../images/contacts/img-tab@2x.png);
+    }
 }
