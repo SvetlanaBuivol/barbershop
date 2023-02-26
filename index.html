@@ -59,10 +59,11 @@
         <div class="hero-container container">
           <div class="hero-left-side">
           <ul class="hero-left-list list">
-            <li><a class="link" href="">Instagram</a></li>
+            <li class="first"><a class="link" href="">Instagram</a></li>
             <li><a class="link" href="">Youtube</a></li>
           </ul>
           </div>
+          <div class="hero-right-side">
           <div class="hero-wrapper">
             <p class="hero-uppertitle uppertitle">A hair salon for men in Kyiv</p>
             <h1 class="hero-title title">BarberShop</h1>
@@ -71,6 +72,8 @@
               and with style.
             </p>
           </div>
+          </div>
+          
           
     <!-- Slider -->
     <!-- <ul class="list">
@@ -331,28 +334,48 @@
               <p class="team-text">Extreme Barber</p>
               <ul class="team-media-link">
                 <li>
-                  <a class="team-link" href="">
+                  <a 
+                  class="team-link" 
+                  aria-label="Instagram" 
+                  href="" 
+                  target="_blank"
+                  rel="noopener norefferer">
                     <svg class="team-icon" width="20" height="20">
                       <use href="./images/symbol-defs.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="team-link" href="">
+                  <a 
+                  class="team-link" 
+                  aria-label="Twitter" 
+                  href="" 
+                  target="_blank"
+                  rel="noopener norefferer">
                     <svg class="team-icon" width="20" height="20">
                       <use href="./images/symbol-defs.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="team-link" href="">
+                  <a 
+                  class="team-link" 
+                  aria-label="Facebook" 
+                  href="" 
+                  target="_blank"
+                  rel="noopener norefferer">
                     <svg class="team-icon" width="20" height="20">
                       <use href="./images/symbol-defs.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="team-link" href="">
+                  <a 
+                  class="team-link" 
+                  aria-label="Linkedin" 
+                  href=""
+                  target="_blank"
+                  rel="noopener norefferer">
                     <svg class="team-icon" width="20" height="20">
                       <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                     </svg>
@@ -448,16 +471,18 @@
       </section>
       
       <!-- Booking -->
-      <!-- <section class="section">
-        <div class="container">
+      <div class="section-wrapper">
+        <div class="contact-container container">
+      <section class="booking-section section">
+        <!-- <div class="booking-container container"> -->
           <h2 class="title">Online-booking</h2>
           <button class="btn">Send</button>
-        </div>
-      </section> -->
+        <!-- </div> -->
+      </section>
       
       <!-- Contacts -->
       <section class="contact-section section">
-        <div class="contact-container container">
+        <!-- <div class="contact-container container"> -->
           <h2 class="contact-title title">Contacts</h2>
           <div class="contact-wrapper">
           <address class="adress-list">
@@ -489,8 +514,10 @@
             </p>
           </div>
          </div>
-        </div>
+        <!-- </div> -->
       </section>
+      </div>
+      </div> 
     </main>
     
     <footer class="footer">
