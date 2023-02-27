@@ -828,7 +828,16 @@ p {
 }
 
 @media screen and (min-width: 1200px) {
-    
+    .benefits-container {
+        gap: 30px;
+    }
+    .benefits-wrapper-right {
+        width: 570px;
+    }
+    .benefits-list {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /* ================ */
