@@ -28,10 +28,10 @@
         </a>
         <nav>
           <ul class="list header-nav-list">
-            <li><a class="header-link link" href="">About</a></li>
-            <li><a class="header-link link" href="">Services and prices</a></li>
-            <li><a class="header-link link" href="">Barbers</a></li>
-            <li><a class="header-link link" href="">Contacts</a></li>
+            <li><a class="header-link link" href="#about">About</a></li>
+            <li><a class="header-link link" href="#price">Services and prices</a></li>
+            <li><a class="header-link link" href="#barbers">Barbers</a></li>
+            <li><a class="header-link link" href="#contacts">Contacts</a></li>
           </ul>
         </nav>
       
@@ -91,7 +91,7 @@
       </section>
       
       <!-- About us -->
-      <section class="about-section section">
+      <section class="about-section section" id="about">
         <div class="about-container container">
           <ul class="about-img list">
             <li class="about-item">
@@ -143,7 +143,7 @@
       </section>
       
       <!-- Services and prices -->
-      <section class="price-section section">
+      <section class="price-section section" id="price">
         <div class="price-container container">
           <p class="price-uppertitle uppertitle">Spend your time with the best masters</p>
           <h2 class="price-title title">Services and prices</h2>
@@ -202,7 +202,7 @@
       </section>
       
       <!-- Our barbers -->
-      <section class="team-section section">
+      <section class="team-section section" id="barbers">
         <div class="team-container container">
           <p class="dark-uppretitle uppertitle">For true enjoyers of the atmosphere</p>
           <h2 class="team-title title">Our barbers</h2>
@@ -480,13 +480,29 @@
         <div class="contact-container container">
       <section class="booking-section section">
         <!-- <div class="booking-container container"> -->
-          <h2 class="title">Online-booking</h2>
-          <button class="btn">Send</button>
+          <h2 class="booking-title title">Online-booking</h2>
+          <form class="booking-form" name="booking_form">
+            <div class="booking-form-group">
+              <label class="booking-form-field">
+                <input class="booking-form-input" type="text" name="user_name" placeholder="Svitlana Buivol" required>
+                <span class="booking-form-lable">Name*</span>
+              </label>
+              <label class="booking-form-field">
+                <input class="booking-form-input" type="tel" name="user_phone" placeholder="+38 099 123 45 67" required>
+                <span class="booking-form-lable">Phone*</span>
+              </label>
+            </div>
+            <label class="booking-form-field">
+              <textarea class="booking-form-message" name="user_message" rows="5" placeholder="Type your message"></textarea>
+              <span class="booking-form-lable">Message</span>
+            </label>
+          <button class="booking-btn btn" type="submit">Send</button>
+          </form>
         <!-- </div> -->
       </section>
       
       <!-- Contacts -->
-      <section class="contact-section section">
+      <section class="contact-section section" id="contacts">
         <!-- <div class="contact-container container"> -->
           <h2 class="contact-title title">Contacts</h2>
           <div class="contact-wrapper">
